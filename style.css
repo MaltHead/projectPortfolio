@@ -1,0 +1,32 @@
+.menu {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu a {
+    color: #FBF6EE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.about {
+    margin-top: 48px;
+}
+
+.projects {
+    background-color: #FBF6EE;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.projects img{
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
