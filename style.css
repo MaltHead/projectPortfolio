@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mate SC', serif;
+    }
 .menu {
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
+    position: fixed; /* Set  navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */  
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
+    font-size: 1.5rem;
 }
 
 .menu a {
@@ -18,15 +25,84 @@
 
 .about {
     margin-top: 48px;
-}
-
-.projects {
-    background-color: #FBF6EE;
+    min-height: 500px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding:3rem;
     text-align: center;
+    background-color: #FBF6EE;
+}
+
+.aboutme{
+    flex-basis: 40%;
+    padding-top: 3.5rem;
+}
+
+.about img{
+    border-radius: 20%;
+}
+
+.about p{
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+h1{
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.doneProjects{
+    background-color: #DFDCCD;
+    text-align: center;
+    padding-top:3rem;
+    font-size: 2rem;
+}
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 3rem 2rem;
 }
 .projects img{
     border-radius: 50%;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+.projects a{
+    text-decoration: none;
+    color: #333;
+    padding-bottom: 2.5rem;
+}
+
+.skills{
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+}
+.skills i{
+    font-size: 5rem;
+    padding: 1.5rem;
+}
+#skills h2{
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+}
+.contact{
+    background-color: #C1C1BF;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    padding: 4rem; 
+}
+.contact h2{
+    padding-bottom: 2rem;
+}
+.contact a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
