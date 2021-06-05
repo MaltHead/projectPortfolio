@@ -22,6 +22,9 @@
     padding: 14px 16px;
     text-decoration: none;
   }
+.menu a:hover{
+    color: #C1C1BF;
+}
 
 .about {
     margin-top: 48px;
@@ -48,10 +51,28 @@
     padding-bottom: 2.5rem;
 }
 
-h1{
+h1{ 
     font-size: 3rem;
     padding: 2rem;
-}
+    border-right: solid 3px #333;
+    white-space: nowrap;
+    overflow: hidden;   
+    animation:  animated-text 4s steps(29,end) 1s 1 normal both,
+                animated-cursor 500ms steps(29,end) infinite; 
+  }
+  @keyframes 
+  animated-text{
+    from{width: 0;}
+    to{width: 472px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes 
+  animated-cursor{
+    from{border-right-color: #333;}
+    to{border-right-color: transparent;}
+  }
 
 .doneProjects{
     background-color: #DFDCCD;
@@ -71,12 +92,41 @@ h1{
     margin-bottom: 3rem;
     padding-top: 3rem;
 }
-.projects a{
-    text-decoration: none;
-    color: #333;
-    padding-bottom: 2.5rem;
+.projects button{
+    background-color: #DFDCCD;
+    border: none;
+    font-size: 1.5rem;
+}
+.projects button:hover{
+    font-size: larger;
+    transition: 600ms;
 }
 
+span{
+    font-size: 1rem;
+}
+li{
+    list-style: none;
+}
+
+#close1{
+    visibility: hidden;
+}
+#hiddentext1{
+    visibility: hidden;
+}
+#close2{
+    visibility: hidden;
+}
+#hiddentext2{
+    visibility: hidden;
+}
+#close3{
+    visibility: hidden;
+}
+#hiddentext3{
+    visibility: hidden;
+}
 .skills{
     padding:3rem;
     display: flex;

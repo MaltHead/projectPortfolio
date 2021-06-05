@@ -11,17 +11,17 @@
   </head>
   <header>
     <nav class="menu">
-          <a href="#about">About me</a>
-          <a href="#projects">Projekte</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Kontakt</a>
+          <a href="#about" id="menu">About me</a>
+          <a href="#projects" id="menu">Projects</a>
+          <a href="#skills" id="menu">Skills</a>
+          <a href="#contact" id="menu">Contact</a>
       </nav>
   </header>
   <body>
     <section class="about" id="about">
         
         <div class="aboutme">
-            <h1>Hi! I'm Sammy,</h1>
+            <h1 id="demo">Hi! I'm Sammy,</h1>
             <p>I am a Web-Devolper-Newbie from Frankfurt, Germany, <br>
                 currently learning Front-End-Development with Codecademy</p>
             </div>
@@ -34,19 +34,43 @@
         <h2>Projects</h2>
         <div class="projects">
         <figure>
-            <a href="www.codecademy.com"><img src="pictures/Projects.jpg" 
+          <a href="www.codecademy.com"><img src="pictures/Projects.jpg" 
                 alt="placeholder-picture"></a>
-            <figcaption><a href="www.codecademy.com">Project 1</a></figcaption>
+            <figcaption><button id="projectinfo1">Project 1</button></figcaption>
+            <span id="hiddentext1">Technologies used at this Project:<br>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </span>
+            <button id="close1">close Info</button>
           </figure>
           <figure>
             <a href="www.codecademy.com"><img src="pictures/Projects.jpg" 
                  alt="placeholder-picture"></a>
-            <figcaption><a href="www.codecademy.com">Project 2</a> </figcaption>
+            <figcaption><button id="projectinfo2">Project 2</button></figcaption>
+            <span id="hiddentext2">Technologies used at this Project:<br>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </span>
+            <button id="close2">close Info</button>
           </figure>
           <figure>
             <a href="www.codecademy.com"><img src="pictures/Projects.jpg" 
                 alt="placeholder-picture"></a>
-            <figcaption><a href="www.codecademy.com">Project 3</a></figcaption>
+            <figcaption><button id="projectinfo3">Project 3</button></figcaption>
+            <span id="hiddentext3">Technologies used at this Project:<br>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </span>
+            <button id="close3">close Info</button>
           </figure>
         </div>
     </section>
@@ -60,11 +84,15 @@
             </div>
     </section>
 
-    <section class="contact"> 
+    <section class="contact" id="contact"> 
         <h2>Contact</h2>
         <p>Find me on <a href="https://github.com/MaltHead"><i class="fab fa-github"></i></a> 
-            or contact me via <a href="s.dieckhoff@outlook.de">E-mail</a>  </p>
+          or contact me via <a href="s.dieckhoff@outlook.de">E-mail</a> 
+          or <a href="https://www.linkedin.com/in/samantha-dieckhoff-0254bb206/">
+            <i class="fab fa-linkedin"></i></a> 
+        </p>
 
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
