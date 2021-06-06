@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 * {
     margin: 0;
-    padding: 0;
-    font-family: 'Mate SC', serif;
+    box-sizing: border-box;
     }
+body{
+    margin: 0;
+    padding:0;
+    font-family: 'Mate SC', serif;
+}
 .menu {
     overflow: hidden;
     background-color: #333;
@@ -27,6 +31,7 @@
 }
 
 .about {
+    width: 100%;
     margin-top: 48px;
     min-height: 500px;
     display: flex;
@@ -34,16 +39,17 @@
     flex-wrap: wrap;
     padding:3rem;
     text-align: center;
-    background-color: #FBF6EE;
+    background-color: #FBF6EE; 
 }
 
 .aboutme{
-    flex-basis: 40%;
+    /*flex-basis: 40%;*/
     padding-top: 3.5rem;
 }
 
 .about img{
     border-radius: 20%;
+    flex-wrap: wrap;
 }
 
 .about p{
@@ -54,10 +60,10 @@
 h1{ 
     font-size: 3rem;
     padding: 2rem;
-    border-right: solid 3px #333;
+    /*border-right: solid 3px #333;
     white-space: nowrap;
     overflow: hidden;   
-    animation:  animated-text 4s steps(29,end) 1s 1 normal both,
+    /*animation:  animated-text 4s steps(29,end) 1s 1 normal both,
                 animated-cursor 500ms steps(29,end) infinite; 
   }
   @keyframes 
@@ -66,12 +72,12 @@ h1{
     to{width: 472px;}
   }
   
-  /* cursor animations */
+
   
   @keyframes 
   animated-cursor{
     from{border-right-color: #333;}
-    to{border-right-color: transparent;}
+    to{border-right-color: transparent;}*/
   }
 
 .doneProjects{
@@ -90,7 +96,6 @@ h1{
 .projects img{
     border-radius: 50%;
     margin-bottom: 3rem;
-    padding-top: 3rem;
 }
 .projects button{
     background-color: #DFDCCD;
@@ -143,6 +148,7 @@ li{
 }
 .contact{
     background-color: #C1C1BF;
+    width: 100%;
     display: block;
     font-size: 2rem;
     text-align: center;
