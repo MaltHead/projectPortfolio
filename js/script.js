@@ -52,4 +52,11 @@ closeButton2.addEventListener('click', hide2);
 openProject3.addEventListener('click',show3);
 closeButton3.addEventListener('click', hide3);
 
-
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
