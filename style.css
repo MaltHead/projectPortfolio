@@ -135,13 +135,14 @@ li{
     visibility: hidden;
 }
 .skills{
+    width: 100%;
     padding:3rem;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    text-align: center;
 }
 .skills i{
     font-size: 5rem;
-    padding: 1.5rem;
+    padding: 0 5rem;
 }
 #skills h2{
     padding-top: 3rem;
@@ -192,3 +193,12 @@ li{
         max-width: 80%;
     }
   }
+.footer{
+    text-align: center;
+    background-color: #333;
+    color:#FBF6EE;
+    padding:2.5rem;
+}
+.fa-heart{
+    color: red;
+}
